@@ -19,7 +19,7 @@ import { FooterComponent } from './footer/footer.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule.forRoot()//connect bootstrap
+    NgbModule.forRoot() //connect bootstrap
   ],
   providers: [],
   bootstrap: [AppComponent]
