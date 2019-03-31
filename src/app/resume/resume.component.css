@@ -1,12 +1,40 @@
 #resume{
     background-image: url("../../assets/backgr.jpg");
+    min-width: 100%;
+    min-height: 100%;
 }
 
 #me{
     margin-left: 20px;
 }
 
-#left{
-    margin-left: 350px;
-    margin-top: -430px;
+#contacts{
+    float: right;
+    margin-top: -450px;
 }
+
+#info1{
+    float: unset;
+    text-align: center;
+    margin-top: -400px;
+}
+
+#info2{
+    float: unset;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#info3{
+    float: unset;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#info4{
+    float: unset;
+    text-align: center;
+    margin-top: 50px;
+}
+
+    
