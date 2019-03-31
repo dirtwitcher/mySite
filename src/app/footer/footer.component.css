@@ -1,0 +1,40 @@
+
+#foot1{
+   background: blue;
+   float: left; /*Задаем обтекание*/
+   width: 20%; /*Фиксируем ширину блока*/
+   margin-left: 0px;
+   text-align: center;
+   }
+
+#foot2{
+   background:darkblue;
+   float: left; /*Задаем обтекание*/
+   width: 20%; /*Фиксируем ширину блока*/
+   margin-left: 0px;
+   text-align: center;
+   }
+
+#foot3{
+   background: rgb(90, 90, 233);
+   float: left; /*Задаем обтекание*/
+   width: 20%; /*Фиксируем ширину блока*/
+   margin-left: 0px;
+   text-align: center;
+   }
+         
+#foot4{
+   background: rgb(49, 33, 158);
+   float: left; /*Задаем обтекание*/
+   width: 20%; /*Фиксируем ширину блока*/
+   margin-left: 0px;
+   text-align: center;
+   }
+
+#foot5{
+   background: rgb(0, 0, 161);
+   float: left; /*Задаем обтекание*/
+   width: 20%; /*Фиксируем ширину блока*/
+   margin-left: 0px;
+   text-align: center;
+   }
