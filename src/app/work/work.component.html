@@ -1,3 +1,46 @@
-<p>
-  work works!
-</p>
+<div class="row custom-row">
+  <div class= "col-sm-5 custom-container jumbotron">
+       
+    <form class="form-horizontal" role="form">
+        <fieldset>
+        <legend>Youre job at Bank System</legend>
+         
+            <!--- Id Block --->
+            <div class="form-group">
+              <label for="inputId">Enter id</label>
+              <input type="text" [(ngModel)]="inputId" [ngModelOptions]="{standalone: true}" placeholder=" id (int value)"> 
+            </div>
+             
+            <!--- Select operation Block --->
+            <div class="form-group">
+              <label for="select">Operation</label>
+                <select id="select">
+                  <option>Put</option>
+                  <option>Get</option>
+                  <option>Transact</option>
+                  <option>Print</option>
+                </select>
+            </div>
+
+            <!--- Other Id for Transact Block --->
+            <div class="form-group">
+              <label for="inputOtherId">Enter other id</label>
+               <input type="text" [(ngModel)]="inputOtherId" [ngModelOptions]="{standalone: true}" placeholder=" other id (int value)">
+            </div>
+
+            <!--- Buttons Block --->
+            <div class="form-group">
+              <button type="reset" class="btn btn-default"(click) = "clearData()"> Clear </button>
+              <button type="submit" class="btn btn-primary" (click) = "send()"> Submit </button>
+            </div>
+            <br>
+            <!--- Output Block --->
+            <div class="form-group">
+              <label>Output:</label>
+              <br>
+              <label> {{cash}} </label>
+            </div>
+        </fieldset>
+    </form>
+  </div>
+</div>

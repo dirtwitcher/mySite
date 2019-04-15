@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { FormsModule } from '@angular/forms'; // connect forms
 import { Routes, RouterModule } from '@angular/router'; //connect routes
 
 import { AppRoutingModule } from './app-routing.module';
@@ -30,6 +31,7 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
+    FormsModule, // connect forms
     AppRoutingModule,
     NgbModule.forRoot(), //connect bootstrap
     RouterModule.forRoot(appRoutes) //connect routes

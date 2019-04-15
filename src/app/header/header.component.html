@@ -39,18 +39,18 @@
             <div class="modal-body">
               <form>
                 <div class="form-group">
-                  <label for="loginText" class="col-form-label">Login:</label>
-                  <input type="text" class="form-control" id="loginText">
+                  <label class="col-form-label">Login:</label>
+                  <input type="text" [(ngModel)] = "login" [ngModelOptions]="{standalone: true}" class="form-control">
                 </div>
                 <div class="form-group">
-                    <label for="passwordText" class="col-form-label">Password:</label>
-                    <input type="password" class="form-control" id="passwordText">
+                    <label class="col-form-label">Password:</label>
+                    <input type="password" [(ngModel)] = "pass" [ngModelOptions]="{standalone: true}" class="form-control">
                   </div>
               </form>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Enter</button>
+              <button type="button" class="btn btn-primary" (click) = "auth()">Enter</button>
             </div>
           </div>
         </div>
@@ -84,7 +84,7 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Enter</button>
+              <button type="button" class="btn btn-primary" (click) = "registr()">Enter</button>
             </div>
           </div>
         </div>
