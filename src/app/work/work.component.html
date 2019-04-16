@@ -8,24 +8,30 @@
             <!--- Id Block --->
             <div class="form-group">
               <label for="inputId">Enter id</label>
-              <input type="text" [(ngModel)]="inputId" [ngModelOptions]="{standalone: true}" placeholder=" id (int value)"> 
+              <input type="text" [(ngModel)]="inputId" [ngModelOptions]="{standalone: true}" placeholder=" id (int value). readonly field"> 
             </div>
              
             <!--- Select operation Block --->
             <div class="form-group">
               <label for="select">Operation</label>
-                <select id="select">
+                <select id="select" [(ngModel)]="selectOption" [ngModelOptions]="{standalone: true}">
                   <option>Put</option>
-                  <option>Get</option>
+                  <option>Take</option>
                   <option>Transact</option>
                   <option>Print</option>
                 </select>
+            </div>
+            
+            <!--- Other Id for Transact Block --->
+            <div class="form-group">
+              <label for="money">Money</label>
+              <input type="text" [(ngModel)]="money" [ngModelOptions]="{standalone: true}" placeholder=" Money (int value)">
             </div>
 
             <!--- Other Id for Transact Block --->
             <div class="form-group">
               <label for="inputOtherId">Enter other id</label>
-               <input type="text" [(ngModel)]="inputOtherId" [ngModelOptions]="{standalone: true}" placeholder=" other id (int value)">
+              <input type="text" [(ngModel)]="inputOtherId" [ngModelOptions]="{standalone: true}" placeholder=" other id (int value)">
             </div>
 
             <!--- Buttons Block --->

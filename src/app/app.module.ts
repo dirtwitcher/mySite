@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { FormsModule } from '@angular/forms'; // connect forms
 import { Routes, RouterModule } from '@angular/router'; //connect routes
+import { HttpClientModule } from '@angular/common/http';//htttp connect
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -31,7 +32,8 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-    FormsModule, // connect forms
+    FormsModule, //connect forms
+    HttpClientModule, //connect http
     AppRoutingModule,
     NgbModule.forRoot(), //connect bootstrap
     RouterModule.forRoot(appRoutes) //connect routes
