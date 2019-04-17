@@ -7,8 +7,8 @@
          
             <!--- Id Block --->
             <div class="form-group">
-              <label for="inputId">Enter id</label>
-              <input type="text" [(ngModel)]="inputId" [ngModelOptions]="{standalone: true}" placeholder=" id (int value). readonly field"> 
+              <label>Youre id: </label>
+              <label>{{staticInputId}}</label>
             </div>
              
             <!--- Select operation Block --->
@@ -36,8 +36,8 @@
 
             <!--- Buttons Block --->
             <div class="form-group">
-              <button type="reset" class="btn btn-default"(click) = "clearData()"> Clear </button>
-              <button type="submit" class="btn btn-primary" (click) = "send()"> Submit </button>
+              <button type="reset" class="btn btn-secondary"(click) = "clearData()"> Clear and exit </button>
+              <button type="submit" class="btn btn-primary" (click) = "send()"> Enter </button>
             </div>
             <br>
             <!--- Output Block --->

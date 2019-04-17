@@ -23,6 +23,7 @@ export class HeaderComponent implements OnInit {
   public regLog : string;
   public regPass : string;
   public regRepPass : string;
+  
   public myDataHeader;
 
   constructor(private _sanitizer: DomSanitizer, public http: HttpClient) {
@@ -33,7 +34,7 @@ export class HeaderComponent implements OnInit {
     .subscribe(data => {
       console.log('id: ' + data.idHeader);
       console.log('auth sucsess 0 - false, 1 - true: ' + data.iAmInAcc);
-      WorkComponent.inputId = data.idHeader;
+      WorkComponent.inputId = data.idHeader.toString();
       WorkComponent.inAcc = data.iAmInAcc;
       this.myDataHeader = data;});
       //WorkComponent.inputId = this.myDataHeader.idHeader;
